@@ -1,0 +1,9 @@
+.entrar-end{
+    display: flex;
+    justify-content: row-reverse;
+    font-weight: bold;
+}
+
+.sem-borda-inferior{
+    margin-top: 100px;
+}
