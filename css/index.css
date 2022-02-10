@@ -15,7 +15,7 @@
     align-items: center; }
     .divider-custom .divider-custom-line {
       width: 100%;
-      max-width: 25rem;
+      max-width: 10rem;
       height: 0.35rem;
       background-color: #ca0f0f;
       border-radius: 1rem;
