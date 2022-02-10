@@ -1,7 +1,6 @@
 .entrar-end{
     display: flex;
     justify-content: row-reverse;
-    font-weight: bold;
 }
 
 .sem-borda-inferior{

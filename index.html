@@ -14,20 +14,26 @@
 </head>
 
 <body>
+
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Vivilaria</a>
+      <a class="navbar-brand col-6 col-md-3 text-center fs-4" href="index.html">Vivilaria</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="me-auto mb-2 mb-lg-0">
+          <form class="navbar-nav d-flex">
+            <input class="form-control-plaintext me-auto" type="search" placeholder=" Pesquisar" aria-label="Search">
+            <button class="btn btn btn-secondary" type="submit">Pesquisar</button>
+          </form>
+        </div>
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Pesquisar</button>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
+            <a class="nav-link dropdown-toggle col-6 col-md-1" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Dropdown
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -37,8 +43,8 @@
             </ul>
           </li>
         </ul>
-        <div class="navbar-nav mb-2 mb-lg-0 entrar-end">
-          <a class="nav-link" href="#" class="btn btn-primary" data-bs-toggle="modal"
+        <div class="navbar-nav me-auto mb-2 mb-lg-0">
+          <a class="nav-link entrar-end" href="#" class="btn btn-primary" data-bs-toggle="modal"
             data-bs-target="#staticBackdrop">Entrar</a>
         </div>
       </div>
@@ -55,21 +61,33 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
+          <form class="d-grid gap-1 col-9 mx-auto">
+            <div class="mb-3 form-floating mb-3">
+              <input type="email" class="form-control" id="floatingInput" placeholder="nome@exemplo.com">
+              <label for="floatingInput" class="form-label">E-mail</label>
+            </div>
+            <div class="mb-3 form-floating">
+              <input type="password" class="form-control" id="floatingPassword" placeholder="Senha">
+              <label for="floatingPassword" class="form-label">Senha</label>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Me manter conectado</label>
+            </div>
+            <button class="btn btn-primary" type="submit">Entrar</button>
+          </form>
+        </div>
+        <div class="modal-footer">
           <div class="d-grid gap-1 col-9 mx-auto">
-            <button class="btn btn-primary" type="button">Entrar</button>
-            <br>
             <h6>Não tem uma conta?</h6>
             <button class="btn btn-primary" type="button">Cadastre-se</button>
           </div>
-        </div>
-        <div class="modal-footer">
-          <br>
         </div>
       </div>
     </div>
   </div>
 
-   <!-- Carousel -->
+  <!-- Carousel -->
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
