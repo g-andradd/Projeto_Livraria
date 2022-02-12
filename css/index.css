@@ -149,3 +149,24 @@
   color: #fff;
   background-color: #000000;
   border-color: #000000; }
+
+  .footer{
+    display: block;
+    padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  margin-bottom: -100px;
+  }
+      
+      .modal-footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 4rem 1rem-0.25rem;
+        border-top: 0 solid #c20d0d;
+        border-bottom-right-radius: 0.75rem;
+        border-bottom-left-radius: 0.75rem; }
+        .modal-footer > * {
+          margin: 0.25rem; }

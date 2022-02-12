@@ -324,25 +324,59 @@
       </div>
     </div>
   </section>
+  <!-- Rodapé -->
 
+  <footer class="footer text-center">
+    <div class="container">
+      <div class="row">
+        <!-- Footer Location-->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="mb-4">LOCALIZAÇÃO</h4>
+          <p class="pre-wrap lead mb-0">QD 39 LOJA 01 SETOR CENTRAL 72425-110 Gama, DF</p>
+        </div>
+        <!-- Footer Social Icons-->
+        <div class="col-lg-4 mb-5 mb-lg-0">
+          <h4 class="mb-4">REDES SOCIAIS</h4><a id="botao_social"
+            class="btn btn-outline-light rounded-circle btn-social mx-1"
+            href="https://www.facebook.com/profile.php?id=100007155765748"><i id="social"
+              class="fab fa-fw fa-facebook-f"></i></a><a id="botao_social"
+            class="btn btn-outline-light rounded-circle btn-social mx-1" href="https://www.instagram.com/g_andradd"><i
+              id="social" class="fab fa-fw fa-instagram"></i></a>
+
+        </div>
+        <!-- Footer About Text-->
+        <div class="col-lg-4">
+          <h4 class="mb-4">TRABALHE CONOSCO</h4>
+          <p class="pre-wrap lead mb-0">Mande seu currículo para yukihira@example.com com o assunto quero entrar na
+            família</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Copyright Section-->
+  <section class="copyright py-4 text-center text-white">
+    <div class="container"><small class="pre-wrap">Copyright ©Yukihira 2020</small></div>
+
+  </section>
 
 
 </body>
 <!--Javascript-->
 <script>
-  function mascara(i){
-   
+  function mascara(i) {
+
     var v = i.value;
-    
-    if(isNaN(v[v.length-1])){ // impede entrar outro caractere que não seja número
-       i.value = v.substring(0, v.length-1);
-       return;
+
+    if (isNaN(v[v.length - 1])) { // impede entrar outro caractere que não seja número
+      i.value = v.substring(0, v.length - 1);
+      return;
     }
-    
+
     i.setAttribute("maxlength", "14");
     if (v.length == 3 || v.length == 7) i.value += ".";
     if (v.length == 11) i.value += "-";
- 
- }
-  </script>
+
+  }
+</script>
+
 </html>
