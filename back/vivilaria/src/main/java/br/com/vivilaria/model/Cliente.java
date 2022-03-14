@@ -1,11 +1,12 @@
 package br.com.vivilaria.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.Date;
 
-import javax.persistence.*;
-
-@Table(name = "clientes")
 @Entity
+@Table(name = "clientes")
 public class Cliente {
 	@Id
 	private String cpf;
